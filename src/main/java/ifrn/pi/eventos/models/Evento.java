@@ -16,6 +16,15 @@ public class Evento {
 	private String data;
 	private String horario;
 
+	// ADICIONADOS: Getter e Setter para o ID
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getNome() {
 		return nome;
 	}
