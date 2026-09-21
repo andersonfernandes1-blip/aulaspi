@@ -6,6 +6,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
+
+
+
 @Entity
 public class Convidado {
 
@@ -47,9 +50,11 @@ public class Convidado {
 		this.evento = evento;
 	}
 
+	
 	@ManyToOne
 	private Evento evento;
-
+	
+	
 	@Override
 	public String toString() {
 		return "Convidado [id=" + id + ", nome=" + nome + ", rg=" + rg + ", evento=" + evento + "]";
